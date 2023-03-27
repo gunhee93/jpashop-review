@@ -1,7 +1,7 @@
 package jpabook.jpashop.domain.service;
 
 import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.repository.MemberRepository;
+import jpabook.jpashop.repository.MemberRepositoryOld;
 
 import jpabook.jpashop.service.MemberService;
 import org.junit.Test;
@@ -20,7 +20,8 @@ public class MemberServiceTest {
 
     @Autowired
     MemberService memberService;
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepositoryOld memberRepository;
 
     @Test
     public void 회원가입() {
